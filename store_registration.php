@@ -1,8 +1,7 @@
 </php 
 
 $album = [
-    
-    "title"=> $_POST["title"],
+    "title" => $_POST["title"],
     "author" => $_POST["author"],
     "year" => $_POST["year"],
     "poster" => $_POST["poster"],
