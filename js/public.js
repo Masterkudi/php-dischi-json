@@ -1,12 +1,12 @@
-axios.get("api/posts.php")
+axios.get("api/album.php")
 .then(function (response) {
-    const posts_ul = document.getElementById("posts_ul");
+    const album_ul = document.getElementById("album_ul");
     const posts = response.data;
 
     for (let i = 0; i < posts.lenght; i++) {
         posts_ul.innerHTML += `
         <li>
-            <a>${posts[i].title}</a>
+            <a>${album[i].title}</a>
         </li>
 
         `;
