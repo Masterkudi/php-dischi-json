@@ -1,0 +1,13 @@
+.main-container {
+    background-color: #1C2D3C;
+}
+
+.card {
+    background-color: #102030;
+    
+}
+
+.card-body.text-center {
+    background-color: #102030;
+    color: #fff;
+}
