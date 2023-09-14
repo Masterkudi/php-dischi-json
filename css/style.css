@@ -1,9 +1,22 @@
 .main-container {
     background-color: #1C2D3C;
 }
+.header-container.img {
+    width: 3rem;
+
+}
+
+.gallery {
+    background-color: #06131F;
+    color: white;
+    padding: 2rem 5rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
 
 .card {
     background-color: #102030;
+    justify-content: center;
     
 }
 

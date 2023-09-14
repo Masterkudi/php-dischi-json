@@ -31,16 +31,17 @@ $albumJson = file_get_contents(__DIR__ . "/db/album.json");
 <body>
     <div id="app">
         <header>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum modi minus laborum provident labore consequatur exercitationem id sit asperiores, sequi quisquam alias fugiat repudiandae ab omnis eveniet mollitia eaque! Fugit.
+            <div class="header-container">
+            <img src="./img/Spotify_icon.png" alt="" class="img d-flex w-3">
+            </div>
         </header>
         <main class="main-container">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi eligendi ipsa consectetur! Iste voluptates labore doloribus sed id laborum eos quod, aperiam iure odit autem? Provident pariatur eos labore sapiente!
-            <div v-for="album in albums" :key="album.id" class="container d-lex">
-                <div class="row">
-                    <div class="col-4">
-                        <div class="card pt-2 pe-5 pb-0 ps-5" style="width: 18rem;">
-                            <img :src="album.poster" class="card-img-top" alt="...">
+            <div class="gallery">
+                <div class="row row-cols-3 p-3">
+                    <div class="col d-flex p-0" v-for="(album, i) in albums" :key="`album_${i}`">
+                        <div class="card card b-3 text-white" style="width: 18rem;">
                             <div class="card-body text-center">
+                                <img :src="album.poster" class="card-img-top" alt="..."> 
                                 <h5 class="card-title">{{ album.title }}</h5>
                                 <p class="card-text">{{ album.author }}</p>
                                 <p class="card-title">{{ album.year }}</p>
