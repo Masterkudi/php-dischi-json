@@ -1,17 +1,23 @@
 .main-container {
     background-color: #1C2D3C;
 }
-.header-container.img {
-    width: 3rem;
+
+.header-container {
+    background-color: #06131F;
+}
+
+.img {
+    width: 2rem;
 
 }
 
 .gallery {
-    background-color: #06131F;
+    background-color: #1C2D3C;
     color: white;
     padding: 2rem 5rem;
     display: flex;
     flex-wrap: wrap;
+    min-height: 100vh;
   }
 
 .card {
