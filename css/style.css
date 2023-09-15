@@ -4,10 +4,13 @@
 
 .header-container {
     background-color: #06131F;
+    min-height: 5rem;
 }
 
 .img {
-    width: 2rem;
+    width: 3rem;
+    margin: 1rem;
+    
 
 }
 
@@ -18,15 +21,16 @@
     display: flex;
     flex-wrap: wrap;
     min-height: 100vh;
-  }
+    justify-content: center;
+}
 
 .card {
     background-color: #102030;
-    justify-content: center;
-    
+
 }
 
 .card-body.text-center {
     background-color: #102030;
     color: #fff;
+    max-height: fit-content;
 }

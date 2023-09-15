@@ -31,14 +31,13 @@ $albumJson = file_get_contents(__DIR__ . "/db/album.json");
 <body>
     <div id="app">
         <header>
-            <div class="header-container">
+            <div class="header-container d-flex">
             <img src="./img/Spotify_icon.png" alt="" class="img d-flex w-3">
             </div>
         </header>
         <main class="main-container">
-            <div class="gallery">
-                <div class="row row-cols-3 p-3">
-                    <div class="col d-flex p-0" v-for="(album, i) in albums" :key="`album_${i}`">
+            <div class="gallery d-flex">
+                <div class="row row-cols-3 p-3"v-for="(album, i) in albums" :key="`album_${i}`">
                         <div class="card card b-3 text-white" style="width: 18rem;">
                             <div class="card-body text-center">
                                 <img :src="album.poster" class="card-img-top" alt="..."> 
@@ -47,7 +46,6 @@ $albumJson = file_get_contents(__DIR__ . "/db/album.json");
                                 <p class="card-title">{{ album.year }}</p>
                             </div>
                         </div>
-                    </div>
                 </div>
             </div>
         </main>
